@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+
+    <section>
+        <h1 class="text-white mb-5 text-center">Registro de Inmuebles</h1>
+        <form autocomplete="off">
+            <div class="row">
+                <div class="col-6">
+                    <input class="form-control" type="number" placeholder="ingrese el idinmueble" id="idinmueble" name="idinmueble">
+                </div>
+                <div class="col-6">
+                    <samp id="alertId" class=" alert d-none "></samp>
+
+                </div>
+
+            </div>
+            <div class="row my-3">
+                <div class="col-6">
+                    <input class="form-control" type="text" placeholder="ingrese la direccion" id="direccion" name="direccion">
+                </div>
+                <div class="col-6">
+                    <samp id="alertDireccion" class="alert d-none"></samp>
+
+                </div>
+                <div class="row mt-3">
+
+                    <div class="col-6">
+                        <input class="form-control" type="number" placeholder="ingrese el telefono" id="telefono" name="telefono">
+                    </div>
+                    <div class="col-6">
+                        <samp id="alertTelefono" class="alert d-none"></samp>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row mb-3">
+                <div class="col-6">
+                    <input class="form-control" type="number" placeholder="ingrese el precio" id="precio" name="precio">
+                </div>
+                <div class="col-6">
+                    <samp id="alertPrecio" class="alert d-none"></samp>
+
+                </div>
+
+            </div>
+
+            <div class="btn-button">
+                <input class="btn btn-primary" type="submit" name="enviar" value="Enviar" id="enviar">
+                <input class="btn btn-primary" type="submit" name="buscar" value="Buscar Inmueble" id="buscar">
+                <input class="btn btn-primary" type="submit" name="listar" value="Listar Inmueble" id="listar">
+            </div>
+
+
+        </form>
+
+        <div id="listarInmueble" class="section"></div>
+
+    </section>
+
+    <script src="./src/app.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

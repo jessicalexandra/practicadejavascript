@@ -1,0 +1,34 @@
+form {
+    width: 65%;
+    margin: 50px auto;
+    background-color: #21232a;
+    padding: 30px;
+    min-height: 75vh;
+}
+
+.section {
+    width: 65%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+}
+
+body{
+    background-image: url(../img/casa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.btn-button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 970px) {
+    .btn-button {
+        flex-direction: row;
+    }
+}
